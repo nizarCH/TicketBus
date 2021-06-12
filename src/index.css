@@ -1,0 +1,509 @@
+/*============= RESET STYLE =============
+
+/*-- iPhone X Remove Gutters
+Ignore W3C Validation error for this style. --*/
+html {
+  padding: env(safe-area-inset);
+}
+::-webkit-scrollbar{
+  width: 12px;
+
+} 
+::-webkit-scrollbar-thumb{
+ background: linear-gradient(transparent,rgb(8, 174, 224));
+  border-radius: 6px;
+
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(transparent,rgb(14, 149, 190));
+}
+/*-- Body Resets --*/
+body {
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+  justify-content: center;
+  overflow: overlay;
+}
+
+/* Loading */
+.loader-container{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8F8AD;
+}
+.loader{
+  left:43%;
+  top: 35%;
+  z-index: 1000;
+  position: absolute;
+}
+
+/*============= NAVIGATION =============*/
+.navbar{
+  background-color: #a0b7ee
+}
+.navbar-brand img{
+  height: 2rem;
+}
+
+.navbar-dark{
+  padding: .6rem 1rem;
+  font-size: 12px;
+  font-weight: 700;
+  color: #00b3ff;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+
+}
+.navbar-nav li {
+  padding-right: 3rem;
+}
+.navbar-nav .nav-link{
+  padding-top: .8rem;
+  color: white !important;
+}
+.navbar-nav .nav-link:hover,.navbar-nav .nav-link.active{
+color: #00b3ff !important;
+}
+.dropdown-menu{
+transform: translate(-60%);
+}
+.btnlogin{
+  transform: translate(20%);
+  border-radius: 24px;
+  background-color: #275efe;
+  padding: 5px 18px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  border:none;
+  box-shadow: none;
+  outline: none !important;
+  cursor: pointer;
+}
+.btnlogin:hover{
+  background-color: #0d3bc4;
+}
+
+/*============= LANDING PAGE =============*/
+
+/*-- Fixed Landing Page Section --*/
+.landing{
+  height: 100vh;
+  width: 100vh;
+}
+.home-inner{
+  background-image: url('./images/mainpage.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+/*-- Landing Page Content --*/
+
+/*--Select box--*/
+.Vcontainer{
+  margin-top: 19%;
+  text-align: center;
+  z-index: -1;
+}
+.select-box{
+  padding-bottom: 15px;
+
+}
+
+.selected, .Date, .Search-btn{
+  background-color: white;
+  color: white;
+  text-align: center;
+  width: 450px;
+  border: none;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+.Date{
+  padding: 14px 0px;
+
+  color: black;
+}
+.Search-btn{
+  background-color: #a0b7ee;
+  padding: 14px 30px;
+  border-radius: 20px;
+display:inline-block;
+border:none;
+border-radius:20px;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#FFFFFF;
+text-align:center;
+transition: all 0.5s;
+}
+.Search-btn:hover{
+  background-color: #6482c9;
+}
+/* .slide{
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+}
+.slide-track{
+  display: flex;
+  width: calc(250px*18);
+}
+.slide{
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+.slide img{
+width: 100%;
+border-radius: 100px;
+animation: scroll 40s linear infinite;
+}
+.slide img:hover{
+  transform: translateZ(20px);
+  }
+  @keyframes scroll{
+    0%{
+      transform: translate(0);
+    }
+    100%{
+      transform: translateX(calc(-250px*9));
+    }
+  }
+.slider::before,
+.slider::after{
+  background: linear-gradient(transparent,rgba(89, 120, 177, 0.336),rgba(5, 62, 116, 0.733));
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+.slider::before{
+  left: 0;
+  top: 0;
+}
+.slider::after{
+  right: 0;
+  top: 0;
+} */
+/*============= ABOUT SECTION =============*/
+
+/*-- Scrollspy Offset --*/
+
+
+
+/*============= PORTFOLIO SECTION =============*/
+
+
+
+/*============= TESTIMONIALS SECTION =============*/
+
+
+
+/*============= CONTACT SECTION =============*/
+/*==============SE CONNECTER=================*/
+.none{
+  display: none;
+}
+.profile{
+  font-size: 15px;
+}
+.dropdown-item{
+  cursor: pointer;
+}
+.notfound{
+  background-color: #0e7077;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.sad{
+  font-size: 100px;
+}
+.liste-found{
+
+  text-align: center;
+}
+/*============Second PAGE ==================*/
+.secondpage table{
+  margin-top: 2%;
+}
+.voyage{
+
+  text-align: center;
+  background-color: rgb(236, 242, 248);
+
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+.title-voyage{
+text-align: center;
+
+}
+.allvoyages{
+width: 100%;
+padding: 100px;
+text-align: center;
+vertical-align: middle;
+}
+.voyage tr{
+  text-align: center;
+  vertical-align: middle;
+}
+.voyage td{
+    border-left: solid 3px dotted !important;
+    padding: 20px 0px;
+    border-left-color: rgb(11, 130, 241) !important;
+    text-align: center;
+    vertical-align: middle;
+}
+.transport{
+  text-align: center;
+  width: 100px;
+}
+.bus-img{
+  height: 10vh;
+}
+.select-box-second{
+  display: flex;
+}
+.selected-second, .Date-second, .Search-btn-second{
+  background-color: white;
+  color: white;
+  text-align: center;
+  margin-top: 30%;
+  margin-left: 60px;
+  width: 200px;
+  border: none;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+.Date-second{
+  padding: 15.77px 0px;
+  
+  color: black;
+}
+.Search-btn-second{
+  background-color: #a0b7ee;
+  padding: 14px 30px;
+  border-radius: 20px;
+display:inline-block;
+border:none;
+border-radius:20px;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#FFFFFF;
+text-align:center;
+transition: all 0.5s;
+}
+.Search-btn-second:hover{
+  background-color: #a2b0d1;
+}
+.Modifier{
+  background-image: linear-gradient(to right, rgb(129, 178, 201), rgb(1, 8, 32));
+}
+.btn-reserver{
+  background-color: #a0b7ee;
+  padding: 14px 30px;
+  border-radius: 20px;
+display:inline-block;
+border:none;
+border-radius:20px;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#FFFFFF;
+text-align:center;
+transition: all 0.5s;
+margin-left: 20px;
+}
+.btn-reserver:hover{
+  background-color: #a2b0d1;
+}
+/*========== Reservation ============*/
+.ticket{
+  width: 340px;
+  background-color: rgb(145, 197, 248);
+margin-top: 4%;
+color: rgb(15, 14, 14);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  list-style: none;
+  font-weight: bold;
+  padding-left: 0;
+margin-left: 120px;
+border-radius: 20px;
+}
+.reservation{
+
+  text-align: center;
+  background-color: rgb(236, 242, 248);
+margin-top: 150px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+
+  grid-template-columns: 1fr;
+
+}
+.reservation-none{
+  display: none;
+}
+.reservation table{
+  margin-left: 200px;
+}
+.reservation td{
+  padding: 20px;
+  padding-top: 10px;
+
+  vertical-align: middle;
+
+}
+.reservation input{
+  padding: 0px 10px;
+
+}
+.reservation label{
+  margin-left: 70px;
+  justify-self: center; 
+  text-align:center;  
+}
+.reservation li{
+  padding-top: 5px;
+}
+.btn-confirm{
+  background-color: #a0b7ee;
+  padding: 5px 20px;
+  border-radius: 20px;
+display:inline-block;
+border:none;
+border-radius:20px;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#FFFFFF;
+text-align:center;
+transition: all 0.5s;
+margin-left: 40px;
+}
+.btn-confirm:hover{
+  background-color: #a2b0d1;
+}
+.btn-guest,.btn-client{
+padding: 0px 10px;
+margin-left: 120px;
+place-items: center;
+background-color: #a0b7ee;
+text-transform: uppercase;
+font-weight: bolder;
+margin-bottom: 100px;
+border-radius: 10px;
+border: none;
+}
+.userRes{
+  text-align: center;
+  margin-left: 20.5%;
+}
+/* =========== paiement ============ */
+.paiement{
+text-align: center;
+margin-top: 10px;
+margin-left: 100px;
+justify-content: center;
+transition: all 0.5s;
+
+}
+.paiement-none{
+  display: none;
+  text-align: center;
+margin-top: 10px;
+margin-left: 340px;
+}
+
+/*============= MEDIA QUERIES =============*/
+@media (max-width: 750px){
+  .dropdown-menu{
+    transform: translate(0%);
+ 
+  }
+
+}
+
+
+/*===========================================*/
+@media (max-width: 500px){    
+}
+/* ============== Footer ==================*/
+.footer-up{
+  background-color: rgb(19, 18, 18);
+  color: white;
+  text-transform: none;
+  width: 100%;
+}
+.footer-down{
+  background-color: rgb(19, 18, 18);
+}
+.footer-table{
+  width: 100%;
+  text-align: center;
+}
+.footer-table ul {
+  list-style: none;
+}
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Fixed Landing Page Section --*/
+.landing {
+  position: relative;
+  width: 100%;
+  display: table;
+ 
+}
+
+.home-inner {
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+}

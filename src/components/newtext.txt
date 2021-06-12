@@ -1,0 +1,48 @@
+<div>
+        <ul>
+       
+       <li>
+       <input className="dropdown-toggle hidden-arrow btn btn-primary" href="#" id="Dropdown"  type="text" placeholder="hello" role="button" data-toggle="dropdown" aria-expanded="false"/>
+                <div className="dropdown-menu dropdown-menu-left" aria-labelledby="Dropdown" >
+                    <div className="dropdown-divider"></div>
+                    <a className="dropdown-item" href="#">Password</a>
+                </div>
+         </li>
+       
+
+        </ul>
+        <ul className="option">
+          <li> <input type="text" placeholder="---villeDépart---" onChange={(event)=>setSearchTerm(event.target.value)}/></li>
+        {voyages.filter((val)=>{
+                if(searchTerm===""){
+                    return val
+                }
+                else if(val.villeDépart.toLowerCase().includes(searchTerm.toLowerCase())){
+                    return val
+                }
+            })  
+        .map((voyage)=>{
+        return(<li key={voyage.id}  className="voyages">{voyage.villeDépart}</li>)
+          })}
+        </ul>
+        </div>
+       
+          <div>
+          <ul className="option">
+        <li><input type="text" placeholder="---villeArrivée---" onChange={(event)=>setSearchTerm2(event.target.value)}/></li>
+
+        {voyages.filter((val)=>{
+                if(searchTerm2===""){
+                    return val
+                }
+                else if(val.villeArrivée.toLowerCase().includes(searchTerm2.toLowerCase())){
+                    return val
+                }
+            }).map((voyage)=>{
+        return(<li key={voyage.id} className="voyages">{voyage.villeArrivée}</li>)
+          })}
+          
+        </ul>
+        <a href="#" className="btn btn-outline-light">Rechercher</a>
+       
+</div>

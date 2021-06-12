@@ -1,0 +1,20 @@
+[
+    {
+        "id":"1",
+        "villeDépart":"Tanger",
+        "villeArrivée":"Fes"
+        
+    },
+    {
+        "id":"2",
+        "villeDépart":"Casablance",
+        "villeArrivée":"Agadir"
+        
+    },
+    {
+        "id":"3",
+        "villeDépart":"Tetouan",
+        "villeArrivée":"Rabat"
+        
+    }
+]
